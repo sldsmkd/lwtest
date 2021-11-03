@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2021-11-03T12:33:48Z"
+  creationTimestamp: "2021-11-03T12:33:48Z"
+  labels:
+    app: hello
+  name: hello
+  namespace: interview
+  resourceVersion: "3513"
+  uid: 7ac49139-5c2c-4303-846b-4c7ae4012789
+subsets:
+- addresses:
+  - ip: 172.17.0.3
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: hello-dcf895c9f-nsfdz
+      namespace: interview
+      resourceVersion: "2902"
+      uid: 497003da-0d12-498a-8a0c-3781a88b483f
+  - ip: 172.17.0.4
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: hello-dcf895c9f-ldpcd
+      namespace: interview
+      resourceVersion: "3062"
+      uid: 38309662-3ba0-4be4-8d5c-4241e57067f6
+  - ip: 172.17.0.5
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: hello-dcf895c9f-k79sv
+      namespace: interview
+      resourceVersion: "3068"
+      uid: 97fe93db-6d6d-4a99-b434-906bed36235c
+  - ip: 172.17.0.6
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: hello-dcf895c9f-vwksq
+      namespace: interview
+      resourceVersion: "3075"
+      uid: f8bf2bf6-e999-4ae4-9335-6366cb68de75
+  ports:
+  - port: 8080
+    protocol: TCP
