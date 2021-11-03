@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2021-11-03T11:26:00Z"
+  labels:
+    kubernetes.io/metadata.name: interview
+  name: interview
+  resourceVersion: "581"
+  uid: 33ab5b9f-b47a-4f55-8502-09241462a65f
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
